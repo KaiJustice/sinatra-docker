@@ -1,7 +1,9 @@
 require 'sinatra'
 
-set :bind, '0.0.0.0'
+class App < Sinatra::Base
 
-get '/' do
-  "Hello World #{params[:name]}".strip
+	get '/' do
+	  "Hello"
+	end
+
 end

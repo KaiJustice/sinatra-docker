@@ -9,6 +9,6 @@ RUN bundle install --system
 ADD . /app
 RUN bundle install --system
 
-EXPOSE 4567
+EXPOSE 9292
 
-CMD ["ruby", "app.rb"]
+CMD ["rackup"]
